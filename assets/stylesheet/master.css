@@ -1,0 +1,501 @@
+* {
+  font-family: "Pathway Extreme", sans-serif;
+}
+
+.bg1 {
+  background-image: url(../img/wlc-bg1.jpg);
+}
+
+.bg2 {
+  background-color: rgb(33, 33, 41);
+}
+
+.headtop {
+  height: 60px;
+  background-color: rgb(33, 33, 41);
+  color: rgb(247, 201, 35);
+}
+.headtop .menu {
+  color: rgb(236, 234, 234);
+}
+.headtop .menu > li {
+  position: relative;
+  list-style-type: none;
+}
+.headtop .menu > li:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+.headtop .menu > li:hover > a {
+  color: rgb(247, 201, 35);
+  border-bottom: 1px solid rgb(247, 201, 35);
+}
+.headtop .menu > li > a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.6s;
+  text-transform: capitalize;
+}
+.headtop .menu > li .submenu {
+  background-color: rgb(33, 33, 41);
+  position: absolute;
+  left: 0;
+  top: 102%;
+  width: 115%;
+  opacity: 0;
+  border: 1px solid rgba(255, 255, 255, 0.821);
+  visibility: hidden;
+  transition: 0.4s;
+}
+.headtop .menu > li .submenu > li {
+  list-style-type: none;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.745);
+}
+.headtop .menu > li .submenu > li > a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.4s;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.headtop .menu > li .submenu > li:nth-of-type(1):hover > a {
+  color: rgb(196, 65, 187);
+  background-color: rgb(58, 58, 71);
+}
+.headtop .menu > li .submenu > li:nth-of-type(2):hover > a {
+  color: rgb(68, 140, 228);
+  background-color: rgb(58, 58, 71);
+}
+.headtop .menu > li .submenu > li:nth-of-type(3):hover > a {
+  color: rgb(254, 141, 4);
+  background-color: rgb(58, 58, 71);
+}
+
+.slide {
+  height: 100vh;
+  background-color: rgb(33, 33, 41);
+  padding-top: 50px;
+}
+.slide figure {
+  height: 500px;
+}
+.slide figure img {
+  border: 1px solid white;
+  background-image: url(../img/wlc-bg1.jpg);
+  border-radius: 26px;
+}
+@media screen and (min-width: 993px) {
+  .slide figure img {
+    height: 70%;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .slide figure img {
+    height: 90%;
+  }
+}
+.slide section {
+  padding-top: 60px;
+  height: 100%;
+  color: white;
+  background-color: rgb(33, 33, 41);
+  padding: 15px;
+}
+.slide section h3 {
+  height: 100px;
+}
+.slide section h2 {
+  height: 100px;
+}
+.slide section h2 > strong {
+  color: rgb(247, 201, 35);
+  font-weight: bolder;
+}
+.slide section h5 {
+  height: 100px;
+}
+.slide section h1 {
+  color: rgb(255, 255, 255);
+  font-size: 42px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 10px rgba(77, 77, 77, 0.558);
+  letter-spacing: 7px;
+  animation: typer 5s steps(24) infinite, blink 1s ease-in-out infinite;
+  border-right: 2px solid rgb(197, 45, 45);
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .slide section h1 {
+    font-size: 20px;
+    word-spacing: 1px;
+    letter-spacing: 3px;
+  }
+}
+
+.abt {
+  height: auto;
+  background-color: rgb(33, 33, 41);
+}
+.abt section {
+  height: 100vh;
+}
+.abt section h4 {
+  font-size: 16px;
+}
+.abt section h4 > a {
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+.abt section h4 > a:hover {
+  color: orange;
+}
+@media screen and (max-width: 992px) {
+  .abt section h4:nth-of-type(5) {
+    font-size: 13px;
+  }
+}
+.abt .skills {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  height: auto;
+  background-color: rgb(33, 33, 41);
+}
+.abt .skills .box {
+  background-color: rgba(221, 221, 221, 0.808);
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.4s;
+  height: 300px;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.611);
+}
+@media screen and (max-width: 768px) {
+  .abt .skills .box {
+    height: 220px;
+  }
+}
+.abt .skills .box:hover {
+  background-color: white;
+  box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+.abt .skills .box:hover img {
+  scale: 1.2;
+  transform: translateY(12px) rotateZ(360deg);
+}
+.abt .skills .box:nth-of-type(1)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 100%;
+  content: "";
+  height: 23px;
+  background-image: linear-gradient(to right, green 97%, white 3%);
+}
+.abt .skills .box:nth-of-type(2)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 100%;
+  content: "";
+  height: 23px;
+  background-image: linear-gradient(to right, rgb(133, 212, 15) 90%, white 10%);
+}
+.abt .skills .box:nth-of-type(3)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 100%;
+  content: "";
+  height: 23px;
+  background-image: linear-gradient(to right, greenyellow 83%, white 17%);
+}
+.abt .skills .box:nth-of-type(4)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 100%;
+  content: "";
+  height: 23px;
+  background-image: linear-gradient(to right, rgb(235, 255, 59) 60%, white 40%);
+}
+.abt .skills .box:nth-of-type(5)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 100%;
+  content: "";
+  height: 23px;
+  background-color: rgb(255, 255, 255);
+}
+.abt .skills .box:nth-of-type(6)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 100%;
+  content: "";
+  height: 23px;
+  background-color: rgb(255, 255, 255);
+}
+.abt .skills .box:nth-of-type(7)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 100%;
+  content: "";
+  height: 23px;
+  background-color: rgb(255, 255, 255);
+}
+.abt .skills .box img {
+  transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+  .abt .skills .box > h3 {
+    font-size: 17px;
+  }
+}
+.abt .skills .box > h5 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .abt .skills .box > h5 {
+    font-size: 15px;
+  }
+}
+
+.prt {
+  margin-top: 200px;
+  height: auto;
+  background-color: rgb(33, 33, 41);
+}
+.prt .box {
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.4s;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  align-content: space-around;
+  justify-content: center;
+  height: 300px;
+  margin: 50px 0;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.611);
+}
+.prt .box::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: 1s;
+}
+.prt .box:hover::after {
+  left: 0;
+}
+.prt .box:hover button {
+  opacity: 1;
+  visibility: visible;
+}
+.prt .box:hover h5 {
+  opacity: 1;
+}
+.prt .box:nth-of-type(1) {
+  background-image: url(../img/portfolio/nike.png);
+  background-size: cover;
+  background-position: center;
+}
+.prt .box:nth-of-type(2) {
+  background-image: url(../img/portfolio/Engineering.png);
+  background-size: cover;
+  background-position: center;
+}
+.prt .box:nth-of-type(3) {
+  background-image: url(../img/portfolio/Realstate.png);
+  background-size: cover;
+  background-position: center;
+}
+.prt .box:nth-of-type(4) {
+  background-image: url(../img/portfolio/Snappfood.png);
+  background-size: cover;
+  background-position: center;
+}
+.prt .box:nth-of-type(5) {
+  background-image: url(../img/portfolio/applenic.png);
+  background-size: cover;
+  background-position: center;
+}
+.prt .box:nth-of-type(6) {
+  background-image: url(../img/portfolio/Asus.png);
+  background-size: cover;
+  background-position: center;
+}
+.prt .box:nth-of-type(7) {
+  background-image: url(../img/portfolio/trickmenu1.png);
+  background-size: cover;
+  background-position: center;
+}
+.prt .box:nth-of-type(8) {
+  background-image: url(../img/portfolio/cards.png);
+  background-size: cover;
+  background-position: center;
+}
+.prt .box > h5 {
+  width: 100%;
+  height: 50%;
+  font-size: 20px;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  z-index: 1;
+  opacity: 0;
+  transition: 1s;
+}
+.prt .box > button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.778);
+  transition: 1s;
+  margin-top: 20px;
+  position: relative;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+.prt .box > button:hover {
+  background-color: rgba(255, 255, 255, 0.81);
+  color: black;
+}
+.prt .box > button > a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+}
+
+.cnt {
+  margin-top: 200px;
+  height: auto;
+  background-color: rgb(33, 33, 41);
+}
+.cnt figure {
+  height: 60vh;
+}
+.cnt figure img {
+  height: 100%;
+}
+.cnt .available {
+  font-weight: bold;
+  margin-left: 40px;
+  background-color: rgb(33, 33, 41);
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.cnt .available p {
+  font-size: 27px;
+  font-weight: bolder;
+  padding: 10px;
+  color: white;
+}
+.cnt .available h4 {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .cnt .available h4 {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .cnt .available h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .cnt .available h4 {
+    font-size: 20px;
+  }
+}
+.cnt .available h4:hover > a {
+  color: rgb(0, 110, 255);
+}
+.cnt .available h4 > i {
+  color: rgb(255, 185, 79);
+}
+.cnt .available h4 > a {
+  font-weight: lighter;
+  text-decoration: none;
+  transition: 0.4s;
+  color: rgb(226, 226, 226);
+}
+
+.foot {
+  margin: 0;
+  width: 100%;
+  margin-top: 100px;
+}
+.foot footer {
+  background-color: rgb(43, 44, 50);
+  color: white;
+  height: 60px;
+  transition: 0.4s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot footer::after {
+  content: "Make a wish , i will CODE it !";
+  width: 0%;
+  height: 30px;
+  color: white;
+  background-color: rgb(153, 25, 25);
+  white-space: nowrap;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -20px;
+  left: 0;
+  overflow: hidden;
+  animation: footerafter alternate infinite linear 7s;
+}
+.foot footer:hover {
+  height: 120px;
+}
+.foot footer:hover > h4 {
+  color: yellowgreen;
+}
+.foot footer h4 {
+  font-size: 17px;
+}
+
+@keyframes typer {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 20ch;
+  }
+}
+@keyframes blink {
+  from {
+    border-right: 2px solid rgba(255, 20, 147, 0);
+  }
+  to {
+    border-right: 2px solid rgb(197, 45, 45);
+  }
+}/*# sourceMappingURL=master.css.map */
