@@ -468,6 +468,9 @@
         height: 60vh;
         img{
             height: 100%;
+            @media screen and (min-width:1201px) {
+               height: 70%;
+            }
         }
     }
 
