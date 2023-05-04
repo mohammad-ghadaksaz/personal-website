@@ -2,6 +2,10 @@
   font-family: "Pathway Extreme", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .bg1 {
   background-image: url(../img/wlc-bg1.jpg);
 }
@@ -128,7 +132,7 @@
 }
 @media screen and (max-width: 768px) {
   .slide section h1 {
-    font-size: 20px;
+    font-size: 17px;
     word-spacing: 1px;
     letter-spacing: 3px;
   }
@@ -493,7 +497,7 @@
     width: 0ch;
   }
   to {
-    width: 20ch;
+    width: 22ch;
   }
 }
 @keyframes blink {
