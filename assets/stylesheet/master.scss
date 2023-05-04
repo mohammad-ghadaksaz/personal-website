@@ -1,7 +1,9 @@
 * {
     font-family: 'Pathway Extreme', sans-serif;
 }
-
+body{
+    overflow-x: hidden;
+}
 .bg1 {
     background-image: url(../img/wlc-bg1.jpg);
 }
@@ -150,7 +152,7 @@
             white-space: nowrap;
 
             @media screen and (max-width:768px) {
-                font-size: 20px;
+                font-size: 17px;
                 word-spacing: 1px;
                 letter-spacing: 3px;
             }
@@ -574,7 +576,7 @@
     }
 
     to {
-        width: 20ch;
+        width: 22ch;
     }
 }
 
